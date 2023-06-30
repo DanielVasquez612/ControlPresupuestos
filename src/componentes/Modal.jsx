@@ -32,7 +32,7 @@ const Modal = ({setModal,animiarModal,setanimarModal,guardarGasto}) =>{
         },3000)
         return;
       }
-      guardarGasto ({nombre,cantidad,categoria})
+      guardarGasto({nombre,cantidad,categoria})
     }
 
   return (
@@ -67,7 +67,7 @@ const Modal = ({setModal,animiarModal,setanimarModal,guardarGasto}) =>{
                     type='number'
                     placeholder='ingresa la cantidad de tu gasto: ej .300'
                     value={cantidad}
-                    onChange={e => setCantidad (Number(e.target.value))}
+                    onChange={e => setCantidad(Number(e.target.value))}
                 />
              </div>
 

@@ -11,7 +11,7 @@ const ControlPresupuesto = ({gastos,Presupuesto}) => {    //se hace un destroin 
   
    const totalDispinible= Presupuesto - totalGastado;
 
-    console.log(totalDispinible)
+    console.log(totalDispinible, formatearCantidad(gastado))
     setDisponible(totalDispinible);
     setGastado(totalGastado);
   },[gastos])

@@ -25,7 +25,7 @@ const handlePresupuesto = (e) =>{
                   type='number'
                   placeholder='Ingresa tu Presupueto'
                   value={Presupuesto}
-                 onChange={e => setPresupuesto (Number(e.target.value))}
+                 onChange={e => setPresupuesto(Number(e.target.value))}
               />
 
           </div>
