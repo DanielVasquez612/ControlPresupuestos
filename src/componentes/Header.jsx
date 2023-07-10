@@ -2,7 +2,7 @@ import React from 'react'
 import NuevoPresupuesto from './NuevoPresupuesto'
 import ControlPresupuesto from './ControlPresupuesto'
 
-const Header = ({gastos,Presupuesto,setPresupuesto,isValidPresupuesto,setIsvalidPresupuesto}) => {       //se hace un destroin para extraer cada componente del arrglo
+const Header = ({gastos,setGastos,Presupuesto,setPresupuesto,isValidPresupuesto,setIsvalidPresupuesto}) => {       //se hace un destroin para extraer cada componente del arrglo
   return (
     <header>
                 <h1>planificador de gastos</h1>
@@ -10,7 +10,11 @@ const Header = ({gastos,Presupuesto,setPresupuesto,isValidPresupuesto,setIsvalid
                  {isValidPresupuesto ? (      // esto es if ternario
                    <ControlPresupuesto 
                    gastos={gastos}
+                   setGastos={setGastos}
                    Presupuesto={Presupuesto}
+                   setPresupuesto={setPresupuesto}
+                   setIsvalidPresupuesto={setIsvalidPresupuesto}
+
                    />
                  ):(   
                   <NuevoPresupuesto 
